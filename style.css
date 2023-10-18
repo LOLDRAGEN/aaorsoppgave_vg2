@@ -2,10 +2,15 @@
     border: solid 2px #708090;
     border-radius: 10px;
     display: flex;
-margin: 50px;
+    margin: 50px;
     flex-flow: column;
     align-items: center;
-
+    justify-self: center;
+    margin: 20px auto 20px auto;
+    width: max-content;
+}
+#title {
+    text-align: center;
 }
 
 #logo {
@@ -16,6 +21,7 @@ margin: 50px;
 .img {
     width: 640px;
     height: 360px;
+    padding: 0 50px 0 50px;
 }
 
 .star_img {
@@ -31,10 +37,6 @@ header {
     justify-content: space-around;
 
 }
-
-
-
-
 
 
 .header_button {

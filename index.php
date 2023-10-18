@@ -24,7 +24,11 @@
         <button class="header_button">login</button>
     </a>
 </header>
+
+<div id="title">
 <h1>The Move Database</h1>
+</div>
+
 <!--<div id="test">-->
 <!--    <h3>movie title</h3>-->
 <!--    <img id="placeholder"-->
