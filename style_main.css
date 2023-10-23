@@ -1,4 +1,4 @@
-.movie-box {
+ .movie-box {
     border: solid 2px #708090;
     border-radius: 10px;
     display: flex;
@@ -41,7 +41,7 @@ header {
 
 .header_button {
     align-items: center;
-    background-col ;
+    background-color: #f2f2f2;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: .25rem;
     box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
@@ -67,7 +67,7 @@ header {
     width: auto;
 }
 
-.header_button:focus {
+ header_button:focus {
     border-color: rgba(0, 0, 0, 0.15);
     box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
     color: rgba(0, 0, 0, 0.65);
