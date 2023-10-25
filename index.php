@@ -24,7 +24,7 @@
 </header>
 
 <div id="title">
-<h1>The Move Database</h1>
+<h1>The Movie Database</h1>
 </div>
 
 <?php
@@ -41,8 +41,6 @@ $conn = mysqli_connect($servername, $username, $password, $dbname);
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
-
-
 
 
 ?>
@@ -62,12 +60,14 @@ $result = $conn->query($sql);
         <div class="movie-box">
             <h3><?php echo $row["title"]; ?></h3>
             <img class="img" src="<?php echo $row["imgs"]; ?>" alt="Movie Poster">
-            <h4><?php echo $row["stars"]; ?> stars <img class="star_img" alt="star" src="https://pngimg.com/d/star_PNG41507.png"></h4>
+            <h4><?php echo $row["stars"];?>  <img class="star_img" alt="star" src="https://pngimg.com/d/star_PNG41507.png"></h4>
         </div>
     <?php endwhile; ?>
 <?php else : ?>
     <p>Ingen filmer funnet.</p>
 <?php endif; ?>
+
+
 
 <?php
 // Lukk databaseforbindelsen
