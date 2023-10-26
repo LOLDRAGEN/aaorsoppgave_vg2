@@ -4,10 +4,9 @@
     <link rel="stylesheet" href="style_main.css">
     <meta charset="UTF-8">
     <title>The Movie Database</title>
-
 </head>
 <body>
-
+<?php session_start(); ?>
 <header>
     <a href="index.php">
         <img id="logo" src="img/the-movie-database.svg" alt="the logo composed of TMDB">

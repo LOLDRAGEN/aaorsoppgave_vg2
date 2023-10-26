@@ -6,6 +6,7 @@
     <title>Sjekk pålogging</title>
 </head>
 <body>
+<?php session_start(); ?>
 <?php
 if (!isset($_POST['submit'])) {
     die();

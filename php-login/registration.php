@@ -6,6 +6,7 @@
         <title>PHP registrering</title>
     </head>
     <body>
+    <?php session_start(); ?>
         <p>Opprett ny bruker:</p>
         <form method="post">
             <label for="brukernavn">Brukernavn:</label>
