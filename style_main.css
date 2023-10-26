@@ -1,5 +1,18 @@
- .movie-box {
+header {
+    border-radius: 10px;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+body {
+    font-family: Leelawadee;
+}
+
+.movie-box {
     border: solid 2px #708090;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     display: flex;
     margin: 50px;
@@ -9,8 +22,10 @@
     margin: 20px auto 20px auto;
     width: max-content;
 }
+
 #title {
     text-align: center;
+    font-size: 30px;
 }
 
 #logo {
@@ -29,15 +44,8 @@
     width: 12px;
 }
 
-header {
-    border-radius: 10px;
-    display: flex;
-    flex-flow: row;
-    align-items: center;
-    justify-content: space-around;
 
-}
-
+/*button tatt fra en 3rd party for og se fin ut*/
 
 .header_button {
     align-items: center;
@@ -68,8 +76,7 @@ header {
 }
 
 
-
- header_button:focus {
+header_button:focus {
     border-color: rgba(0, 0, 0, 0.15);
     box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
     color: rgba(0, 0, 0, 0.65);
