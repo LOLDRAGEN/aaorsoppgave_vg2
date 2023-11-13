@@ -1,18 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style_main.css">
+    <link rel="stylesheet" href="css/style_main.css">
     <meta charset="UTF-8">
     <title>The Movie Database</title>
 </head>
 <body>
 <?php session_start(); ?>
+
+<?php
+session_start();
+
+if (!isset($_SESSION['username'])) {
+    // Brukeren er ikke logget inn
+    header('location: login_form.php');
+    die();
+}
+?>
+
 <header>
     <a href="index.php">
         <img id="logo" src="img/the-movie-database.svg" alt="the logo composed of TMDB">
     </a>
-    <a href="">
-        <button class="header_button">placeholder</button>
+    <a href="admin.php">
+        <button class="header_button">admin</button>
     </a>
     <a href="">
         <button class="header_button">placeholder</button>
@@ -25,7 +36,7 @@
 <div id="title">
     <h1>The Movie Database</h1>
 </div>
-
+<p id="user"><?php echo "Velkommen " . $_SESSION['username'] . "!"; ?></p>
 <?php
 
 

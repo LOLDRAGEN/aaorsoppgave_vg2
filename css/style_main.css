@@ -10,6 +10,10 @@ body {
     font-family: Leelawadee;
 }
 
+#user {
+    font-size: 35px;
+}
+
 .movie-box {
     border: solid 2px #708090;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
@@ -24,8 +28,18 @@ body {
 }
 
 #title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     font-size: 30px;
+}
+#user{
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+    font-weight: bold;
 }
 
 #logo {
