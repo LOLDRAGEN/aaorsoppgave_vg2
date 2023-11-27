@@ -25,7 +25,7 @@ if (!isset($_SESSION['username'])) {
     <a href="admin.php">
         <button class="header_button">admin</button>
     </a>
-    <a href="">
+    <a href="update.php">
         <button class="header_button">change account details</button>
     </a>
     <a href="">

@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
-    <title>PHP Registration</title>
+    <meta charset="UTF-8">
+    <title>Update user</title>
 </head>
 <body>
-<?php session_start(); ?>
+<h3>Change Account</h3>
 
-<p>Create a new user:</p>
-
-<form action="includes/formhandler.inc.php" method="post">
+<form action="includes/userupdate.inc.php" method="post">
     <input type="text" name="username" placeholder="Username">
     <input type="password" name="pwd" placeholder="Password">
     <input type="email" name="email" placeholder="Email">
-    <button type="submit">Sign Up</button>
+    <button type="submit">Update</button>
 </form>
 </body>
 </html>
