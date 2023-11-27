@@ -26,7 +26,7 @@ if (!isset($_SESSION['username'])) {
         <button class="header_button">admin</button>
     </a>
     <a href="">
-        <button class="header_button">placeholder</button>
+        <button class="header_button">change account details</button>
     </a>
     <a href="">
         <button class="header_button">placeholder</button>
@@ -56,7 +56,7 @@ if (!$conn) {
 ?>
 
 <?php
-// SQL-spørring for å hente filminformasjon
+// SQL-request to get the movir info
 $sql = "SELECT movie_id, title, stars, imgs FROM movie";
 $result = $conn->query($sql);
 ?>

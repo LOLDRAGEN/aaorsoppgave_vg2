@@ -14,16 +14,11 @@
     or die('Error connecting to MySQL server.');
     ?>
         <p>Vennligst logg inn:</p>
-        <form method="post" action="login.php">
-            <label for="email">e-mail:</label>
-            <input type="text" name="email"/>  <br/>
-            <label for="brukernavn">Brukernavn:</label>
-            <input type="text" name="brukernavn"/>  <br/>
-            <label for="passord">Passord:</label>
-            <input type="password" name="passord" /><br/>
-
-
-            <input type="submit" value="Logg inn" name="submit" />
+    <form action="includes/login.inc.php" method="post">
+        <input type="text" name="username" placeholder="Username">
+        <input type="password" name="pwd" placeholder="Password">
+        <button>Login</button>
+    </form>
 
 
 
