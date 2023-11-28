@@ -28,8 +28,8 @@ if (!isset($_SESSION['username'])) {
     <a href="update.php">
         <button class="header_button">change account details</button>
     </a>
-    <a href="">
-        <button class="header_button">placeholder</button>
+    <a href="delete.php">
+        <button class="header_button">delete account</button>
     </a>
 </header>
 

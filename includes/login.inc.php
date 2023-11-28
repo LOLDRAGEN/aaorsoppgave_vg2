@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $_SESSION['username'] = $row['username'];
                 // You can add more session variables as needed
 
-                header("Location: ../home.php"); // Redirect to home.php on successful login
+                header("Location: ../index.php"); // Redirect to home.php on successful login
                 exit();
             } else {
                 header("Location: ../index.php?error=wrongpwd"); // Redirect with an error message
