@@ -19,11 +19,11 @@ body {
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     display: flex;
-    margin: 50px;
+    padding: 20px;
     flex-flow: column;
     align-items: center;
     justify-self: center;
-    margin: 20px auto 20px auto;
+    margin: 25px auto 25px auto;
     width: max-content;
 }
 
@@ -34,11 +34,12 @@ body {
     text-align: center;
     font-size: 30px;
 }
-#user{
-display: flex;
-justify-content: center;
-align-items: center;
-text-align: center;
+
+#user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     font-weight: bold;
 }
 

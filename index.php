@@ -12,7 +12,7 @@
 session_start();
 
 if (!isset($_SESSION['username'])) {
-    // Brukeren er ikke logget inn
+    // user is not logged inn
     header('location: login_form.php');
     die();
 }
@@ -25,8 +25,8 @@ if (!isset($_SESSION['username'])) {
     <a href="admin.php">
         <button class="header_button">admin</button>
     </a>
-    <a href="update.php">
-        <button class="header_button">change account details</button>
+    <a href="upload.php">
+        <button class="header_button">Upload a movie</button>
     </a>
     <a href="delete.php">
         <button class="header_button">delete account</button>
@@ -74,13 +74,13 @@ $result = $conn->query($sql);
         </div>
     <?php endwhile; ?>
 <?php else : ?>
-    <p>Ingen filmer funnet.</p>
+    <p>no movies to show</p>
 <?php endif; ?>
 
 
 
 <?php
-// Lukk databaseforbindelsen
+// cloase the database conection
 $conn->close();
 ?>
 
