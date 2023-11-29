@@ -22,14 +22,19 @@ if (!isset($_SESSION['username'])) {
     <a href="index.php">
         <img id="logo" src="img/the-movie-database.svg" alt="the logo composed of TMDB">
     </a>
+
+    <a href="login_form.php">
+        <button class="header_button">Login</button>
+    </a>
+
     <a href="admin.php">
-        <button class="header_button">admin</button>
+        <button class="header_button">Admin</button>
     </a>
     <a href="upload.php">
         <button class="header_button">Upload a movie</button>
     </a>
     <a href="delete.php">
-        <button class="header_button">delete account</button>
+        <button class="header_button">Delete account</button>
     </a>
 </header>
 
