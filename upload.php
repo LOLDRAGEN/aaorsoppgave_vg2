@@ -3,7 +3,7 @@
 <head>
     <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
-    <title>Update user</title>
+    <title>Upload Movie!</title>
 </head>
 <body>
 <header>

@@ -8,7 +8,7 @@ $dbname = "terminoppgave_vg2";
 
 session_start();
 
-if (!isset($_SESSION["admin"])) {
+if ($_SESSION[]) {
     header("location: index.php");
     die('Not admin lmao'); // this should never happen
 }
