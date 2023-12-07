@@ -17,9 +17,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             if ($pwd == $row['pwd']) {
                 session_start();
                 $_SESSION['username'] = $row['username'];
-                // You can add more session variables as needed
 
-                header("Location: ../index.php"); // Redirect to home.php on successful login
+
+                header("Location: ../index.php"); // Redirect to index.php on successful login
                 exit();
             } else {
                 header("Location: ../index.php?error=wrongpwd"); // Redirect with an error message
@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
 
     } catch (PDOException $e) {
-        die("Query failed: " . $e->getMessage());
+        die("Query failed: " . $e->getMessage()); // dumped the query fail
     }
 } else {
     header("Location:../index.php");

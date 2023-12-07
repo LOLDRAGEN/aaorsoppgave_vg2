@@ -6,6 +6,11 @@
     <title>Upload Movie!</title>
 </head>
 <body>
+
+<?php
+require_once 'includes/sesh_chek.inc.php';
+?>
+
 <header>
     <a href="index.php">
         <img id="logo" src="img/the-movie-database.svg" alt="the logo composed of TMDB">

@@ -9,13 +9,7 @@
 <?php session_start(); ?>
 
 <?php
-session_start();
-
-if (!isset($_SESSION['username'])) {
-    // user is not logged inn
-    header('location: login_form.php');
-    die();
-}
+require_once 'includes/sesh_chek.inc.php';
 ?>
 
 <header>
@@ -69,16 +63,16 @@ $result = $conn->query($sql);
 
 
 
-<?php if ($result->num_rows > 0) : ?>
-    <?php while ($row = $result->fetch_assoc()) : ?>
-        <div class="movie-box">
+<?php if ($result->num_rows > 0) : ?> //cheks that $results has more than 0 rows
+    <?php while ($row = $result->fetch_assoc()) : ?> // comtinues the loop as long as $results have rows
+        <div class="movie-box"> //simple exicution of the movie-box
             <h3 id="title"><?php echo $row["title"]; ?></h3>
             <img class="img" src="<?php echo $row["imgs"]; ?>" alt="Movie Poster">
             <h4><?php echo $row["stars"]; ?> <img class="star_img" alt="star"
                                                   src="https://pngimg.com/d/star_PNG41507.png"></h4>
         </div>
     <?php endwhile; ?>
-<?php else : ?>
+<?php else : ?> // if no movie exists
     <p>no movies to show</p>
 <?php endif; ?>
 

@@ -20,7 +20,7 @@ $dbc = mysqli_connect('localhost', 'root', 'Admin', 'terminoppgave_vg2') or die(
 </form>
 
 <?php
-if ($_GET["error"] === "ugyldiglogin") {
+if ($_GET["error"] === "wrongpwd") {
     echo "<h3 class='errormsg'>Invalid login</h3>";
 }
 ?>

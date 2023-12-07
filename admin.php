@@ -8,11 +8,8 @@ $dbname = "terminoppgave_vg2";
 
 session_start();
 
-if ($_SESSION[]) {
-    header("location: index.php");
-    die('Not admin lmao'); // this should never happen
-}
 
+require_once 'includes/sesh_chek.inc.php';
 ?>
 
 
