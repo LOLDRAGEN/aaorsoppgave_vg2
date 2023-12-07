@@ -63,9 +63,9 @@ $result = $conn->query($sql);
 
 
 
-<?php if ($result->num_rows > 0) : ?> //cheks that $results has more than 0 rows
-    <?php while ($row = $result->fetch_assoc()) : ?> // comtinues the loop as long as $results have rows
-        <div class="movie-box"> //simple exicution of the movie-box
+<?php if ($result->num_rows > 0) :  //cheks that $results has more than 0 rows
+     while ($row = $result->fetch_assoc()) :  // comtinues the loop as long as $results have rows ?>
+        <div class="movie-box"> <?php //simple exicution of the movie-box ?>
             <h3 id="title"><?php echo $row["title"]; ?></h3>
             <img class="img" src="<?php echo $row["imgs"]; ?>" alt="Movie Poster">
             <h4><?php echo $row["stars"]; ?> <img class="star_img" alt="star"
