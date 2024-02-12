@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../aarsoppgave/css/style.css">
     <title>PHP Login</title>
 </head>
 <body>

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/style.css">
+    <link href="../aarsoppgave/css/style.css" rel="stylesheet" type="text/css">
     <title>PHP Registration</title>
 </head>
 <body>

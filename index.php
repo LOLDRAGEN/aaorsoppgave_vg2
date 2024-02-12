@@ -30,6 +30,10 @@ require_once 'includes/sesh_chek.inc.php';
     <a href="delete.php">
         <button class="header_button">Delete account</button>
     </a>
+
+    <a href="faq.php">
+        <button class="header_button">FAQ</button>
+    </a>
 </header>
 
 <div id="title">
@@ -56,8 +60,10 @@ if (!$conn) {
 
 <?php
 // SQL-request to get the movir info
-$sql = "SELECT movie_id, title, stars, imgs FROM movie";
+$sql = "SELECT movie_id, title, stars, imgs FROM movie ORDER BY stars DESC";
+
 $result = $conn->query($sql);
+
 ?>
 
 
