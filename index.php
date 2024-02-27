@@ -60,15 +60,25 @@ if (!$conn) {
 
 <?php
 // SQL-request to get the movir info
-$sql = "SELECT movie_id, title, stars, imgs FROM movie ORDER BY stars DESC";
+$sql = "SELECT movie_id, title, stars, imgs FROM movie ORDER BY stars DESC;";
 
-$result = $conn->query($sql);
+var_dump($_POST);
 
+$toggle = ($_POST["sort_stars"] === "1") ? 0 : 1;
 ?>
 
+<form name="Table Properties" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+    Order by rating
+
+    <button type="submit" name="sort_stars" class="button" value="<?php echo $toggle ?>"> Sort stars </button>
+</form>
+<?php if($_POST['sort_stars'] === "1") {
+    $sql = "SELECT * FROM `movie` ORDER BY `movie`.`stars` ASC;";
+}
 
 
-
+$result = $conn->query($sql);
+?>
 <?php if ($result->num_rows > 0) :  //cheks that $results has more than 0 rows
      while ($row = $result->fetch_assoc()) :  // comtinues the loop as long as $results have rows ?>
         <div class="movie-box"> <?php //simple exicution of the movie-box ?>
