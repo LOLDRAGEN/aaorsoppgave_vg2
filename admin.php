@@ -10,14 +10,8 @@ session_start();
 
 
 require_once 'includes/sesh_chek.inc.php';
-?>
-
-
-
-<?php
-$a = [1, 2, 3]
-
- while($a )
+require_once 'includes/admin_chek.inc.php';
 
 
 ?>
+

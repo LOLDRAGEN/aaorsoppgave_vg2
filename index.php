@@ -17,8 +17,8 @@ require_once 'includes/sesh_chek.inc.php';
         <img id="logo" src="img/the-movie-database.svg" alt="the logo composed of TMDB">
     </a>
 
-    <a href="login_form.php">
-        <button class="header_button">Login</button>
+    <a href="logout.php">
+        <button class="header_button">Logout</button>
     </a>
 
     <a href="admin.php">
@@ -62,7 +62,7 @@ if (!$conn) {
 // SQL-request to get the movir info
 $sql = "SELECT movie_id, title, stars, imgs FROM movie ORDER BY stars DESC;";
 
-var_dump($_POST);
+
 
 $toggle = ($_POST["sort_stars"] === "1") ? 0 : 1;
 ?>

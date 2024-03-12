@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             if ($pwd == $row['pwd']) {
                 session_start();
                 $_SESSION['username'] = $row['username'];
-
+                $_SESSION['admin'] = $row['admin'];
 
                 header("Location: ../index.php"); // Redirect to index.php on successful login
                 exit();
