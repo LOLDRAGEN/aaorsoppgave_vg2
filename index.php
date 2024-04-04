@@ -80,19 +80,20 @@ $toggle = ($_POST["sort_stars"] === "1") ? 0 : 1;
 $result = $conn->query($sql);
 ?>
 <?php if ($result->num_rows > 0) :  //cheks that $results has more than 0 rows
-     while ($row = $result->fetch_assoc()) :  // comtinues the loop as long as $results have rows ?>
+     while ($row = $result->fch_assoc()) :  // comtinues the loop as long as $results have rows ?>
         <div class="movie-box"> <?php //simple exicution of the movie-box ?>
             <h3 id="title"><?php echo $row["title"]; ?></h3>
             <img class="img" src="<?php echo $row["imgs"]; ?>" alt="Movie Poster">
             <h4><?php echo $row["stars"]; ?> <img class="star_img" alt="star"
                                                   src="https://pngimg.com/d/star_PNG41507.png"></h4>
+            <?php  echo($row['movie_id']); ?>
         </div>
     <?php endwhile; ?>
 <?php else : ?> // if no movie exists
     <p>no movies to show</p>
 <?php endif; ?>
 
-
+$
 
 <?php
 //close the database connection
