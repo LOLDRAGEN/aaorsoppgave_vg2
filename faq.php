@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="../aarsoppgave/css/style_main.css">
+    <link rel="stylesheet" href="/css/style_main.css">
     <meta charset="UTF-8">
     <title>The Movie Database FAQ</title>
 </head>
