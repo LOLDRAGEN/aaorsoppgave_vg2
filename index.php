@@ -1,3 +1,18 @@
+<?php
+
+
+$servername = "localhost";
+$username = "root";
+$password = "Admin";
+$dbname = "terminoppgave_vg2";
+
+session_start();
+
+
+require_once 'includes/sesh_chek.inc.php';
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +21,6 @@
     <title>The Movie Database</title>
 </head>
 <body>
-<?php session_start(); ?>
 
 <?php
 require_once 'includes/sesh_chek.inc.php';
@@ -16,14 +30,15 @@ require_once 'includes/sesh_chek.inc.php';
     <a href="index.php">
         <img id="logo" src="img/the-movie-database.svg" alt="the logo composed of TMDB">
     </a>
+    <a href="admin.php">
+        <button class="header_button">Admin</button>
+    </a>
+
 
     <a href="logout.php">
         <button class="header_button">Logout</button>
     </a>
 
-    <a href="admin.php">
-        <button class="header_button">Admin</button>
-    </a>
     <a href="upload.php">
         <button class="header_button">Upload a movie</button>
     </a>
@@ -37,7 +52,7 @@ require_once 'includes/sesh_chek.inc.php';
 </header>
 
 <div id="title">
-    <h1>The Movie Database</h1>
+    <h1>Admin</h1>
 </div>
 <p id="user"><?php echo "Velkommen " . $_SESSION['username'] . "!"; ?></p>
 <?php
@@ -80,13 +95,12 @@ $toggle = ($_POST["sort_stars"] === "1") ? 0 : 1;
 $result = $conn->query($sql);
 ?>
 <?php if ($result->num_rows > 0) :  //cheks that $results has more than 0 rows
-     while ($row = $result->fch_assoc()) :  // comtinues the loop as long as $results have rows ?>
+    while ($row = $result->fetch_assoc()) :  // comtinues the loop as long as $results have rows ?>
         <div class="movie-box"> <?php //simple exicution of the movie-box ?>
             <h3 id="title"><?php echo $row["title"]; ?></h3>
             <img class="img" src="<?php echo $row["imgs"]; ?>" alt="Movie Poster">
             <h4><?php echo $row["stars"]; ?> <img class="star_img" alt="star"
                                                   src="https://pngimg.com/d/star_PNG41507.png"></h4>
-            <?php  echo($row['movie_id']); ?>
         </div>
     <?php endwhile; ?>
 <?php else : ?> // if no movie exists
@@ -102,4 +116,6 @@ $conn->close();
 
 </body>
 </html>
+
+
 
