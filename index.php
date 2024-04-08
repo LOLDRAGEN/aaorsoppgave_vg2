@@ -52,7 +52,7 @@ require_once 'includes/sesh_chek.inc.php';
 </header>
 
 <div id="title">
-    <h1>Admin</h1>
+    <h1>The Movie Databese</h1>
 </div>
 <p id="user"><?php echo "Velkommen " . $_SESSION['username'] . "!"; ?></p>
 <?php
