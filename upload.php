@@ -19,7 +19,7 @@ require_once 'includes/sesh_chek.inc.php';
 <h3>Upload a movie</h3>
 
 
-<form action="includes/upload.php" method="post">
+<form action="includes/upload.inc.php" method="post">
     <input type="text" name="title" placeholder="Title">
     <input type="text" name="imgs" placeholder="Image link">
     <input type="text" name="stars" placeholder="Rating">

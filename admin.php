@@ -98,6 +98,7 @@ $result = $conn->query($sql);
             <img class="img" src="<?php echo $row["imgs"]; ?>" alt="Movie Poster">
             <h4><?php echo $row["stars"]; ?> <img class="star_img" alt="star"
                                                   src="https://pngimg.com/d/star_PNG41507.png"></h4>
+
             <a href="<?php echo("includes/moviedelete.inc.php?mid=".$row['movie_id']); ?>">Delete</a>
         </div>
     <?php endwhile; ?>

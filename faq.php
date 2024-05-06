@@ -51,8 +51,8 @@ require_once 'includes/sesh_chek.inc.php';
 </div>
 
 <div class="faq">
-    <h2>#3 Lorem ipsum? </h2>
-    <p>dolor sit amet, consectetur adipisicing elit. Accusamus corporis cupiditate error est id illo illum, impedit, in iusto maxime mollitia numquam quod reiciendis rem sapiente vero voluptate voluptatem, voluptatum.</p>
+    <h2>#3 is there moderation on your sight? </h2>
+    <p>Yes! e have moderators on out sight  who can take down / change movies they don't see fit or that they see as spam.</p>
 
 </div>
 
