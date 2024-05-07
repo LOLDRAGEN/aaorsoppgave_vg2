@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         $pdo = null;
         $stmt = null;
-        header("Location: ../index.php");
+        header("Location: ../login_form.php");
         die;
     } catch (PDOException $e) {
         die("quory failed" . $e->getMessage());

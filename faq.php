@@ -19,7 +19,7 @@ require_once 'includes/sesh_chek.inc.php';
     </a>
 
     <a href="login_form.php">
-        <button class="header_button">Login</button>
+        <button class="header_button">Logout</button>
     </a>
 
     <a href="admin.php">
