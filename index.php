@@ -58,11 +58,6 @@ require_once 'includes/sesh_chek.inc.php';
 <?php
 
 
-$servername = "localhost";
-$username = "root";
-$password = "Admin";
-$dbname = "terminoppgave_vg2";
-
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $dbname);
 // Check connection
