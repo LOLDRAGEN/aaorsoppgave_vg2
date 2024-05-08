@@ -85,7 +85,7 @@ $toggle = ($_POST["sort_stars"] === "1") ? 0 : 1;
     <button type="submit" name="sort_stars" class="button" value="<?php echo $toggle ?>"> Sort stars </button>
 </form>
 <?php if($_POST['sort_stars'] === "1") {
-    $sql = "SELECT * FROM `movie` ORDER BY `movie`.`stars` ASC;";
+ /*   $sql = "SELECT * FROM `movie` ORDER BY `movie`.`stars` ASC;"; */
 }
 
 
