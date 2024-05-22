@@ -9,7 +9,7 @@
     - hyper -> Virtuell svitsj-behandling -> prooveeksamen switch -> vise oppset
 
 
-- mariadb users og priviliges
+## - mariadb users og priviliges
   - SELECT * User FROM mysql.user;
   - show databases; -> use prooveeskamen; -> display tables; -> select usernames,admin from users;
 
@@ -57,5 +57,14 @@ echo("$liste[2]")
 
 # github
 - git push origin main
+- git pull
+- git add .
+- git commit -m "message"
 
 ## inner join
+```
+select select_list
+from t1
+inner join t2 on t1.column1 = t2.column1;
+
+```
