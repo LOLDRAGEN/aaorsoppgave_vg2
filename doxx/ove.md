@@ -25,6 +25,7 @@
     VALUES('id1','text','text'),
 
 
+
 - vise rettigheter bruker
   - SHOW GRANTS FOR 'root'@'localhost';
 
@@ -32,6 +33,14 @@
 - pc navn
   - Select Start > Settings > System > About .
   - sudo hostnamectl set-hostname \<newhostname>
+
+
+- Enabel firewall
+  - ``sudo ufw allow ssh``
+  - ```sudo ufw allow 22```
+  - ``sudo ufw enable``
+  - ``sudo ufw status verbose``
+   
 
 # PHP SYNTAX
 
@@ -60,7 +69,7 @@ echo("$liste[2]")
 - git pull
 - git add .
 - git commit -m "message"
-
+- test
 ## inner join
 ```
 select select_list
