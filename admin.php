@@ -71,7 +71,7 @@ if (!$conn) {
 ?>
 
 <?php
-// SQL-request to get the movir info
+// SQL-request to get the movie info
 $sql = "SELECT movie_id, title, stars, imgs FROM movie ORDER BY stars DESC;";
 
 
