@@ -2,27 +2,27 @@
 - SJEKKE status server og database
   - sudo systemctl status mariadb
   - sudo systemctl status apache2
-  
 
 -  Vise IP/netverkswitch
-    - ipa  / ip config
-    - hyper -> Virtuell svitsj-behandling -> prooveeksamen switch -> vise oppset
+  - ipa  / ip config
+  - hyper -> Virtuell svitsj-behandling -> prooveeksamen switch -> vise oppset
 
 
 ## - mariadb users og priviliges
-  - SELECT * User FROM mysql.user;
-  - show databases; -> use prooveeskamen; -> display tables; -> select usernames,admin from users;
+- SELECT * User FROM mysql.user;
+- show databases; -> use prooveeskamen; -> display tables; -> select usernames,admin from users;
 
-
+  
 - lage database
   - CREATE DATABASE db1;
 
 
 - sette inn data  i databasen
-  - CREATE TABLE table_name (a int); 
+  - CREATE TABLE table_name (a int);
   - INSERt
-    INTO table 
+    INTO table
     VALUES('id1','text','text'),
+
 
 
 
